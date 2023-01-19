@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from './services/authentication/AuthenticationService';
+import { UserService } from './services/user/user-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Technikon-Front-End';
+  title = 'TechnikonFrontEnd';
+
+  constructor(public authenticationService: AuthenticationService, private router: Router) {}
+
+ 
+
+  logout() {
+    localStorage.removeItem('authenticated');
+    localStorage.removeItem('username');
+    this.router.navigate(['/login']);
+  }
 }

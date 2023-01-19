@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>UPDATE OWNER</h2>
+  <form>
+    <div class="form-group">
+      <label for="vat">Vat</label>
+      <input [(ngModel)]="vat" name="vat" type="number" class="form-control" id="vat" placeholder="Enter vat">
+      <button class="update-button" (click)="updateVat()">Update</button>
+    </div>
+
+    <div class="form-group">
+      <label for="vat">Name</label>
+      <input [(ngModel)]="name" name="name" type="text" class="form-control" id="vat" placeholder="Enter name">
+      <button class="update-button" (click)="updateName()">Update</button>
+    </div>
+
+
+    <div class="form-group">
+      <label for="vat">Surname</label>
+      <input [(ngModel)]="surname" name="surname" type="text" class="form-control" id="vat" placeholder="Enter surname">
+      <button class="update-button" (click)="updateSurname()">Update</button>
+    </div>
+
+
+    <div class="form-group">
+      <label for="vat">Address</label>
+      <input [(ngModel)]="address" name="address" type="text" class="form-control" id="vat" placeholder="Enter address">
+      <button class="update-button" (click)="updateAddress()">Update</button>
+    </div>
+
+    <div class="form-group">
+      <label for="vat">PhoneNumber</label>
+      <input [(ngModel)]="phoneNumber" name="phoneNumber" type="text" class="form-control" id="phoneNumber"
+        placeholder="Enter phoneNumber">
+      <button class="update-button" (click)="uppdatePhoneNumber()">Update</button>
+    </div>
+
+    <div class="form-group">
+      <label for="vat">Email</label>
+      <input [(ngModel)]="email" name="email" type="text" class="form-control" id="email" placeholder="Enter email">
+      <button class="update-button" (click)="updateEmail()">Update</button>
+    </div>
+
+    <div class="form-group">
+      <label for="vat">Username</label>
+      <input [(ngModel)]="username" name="username" type="text" class="form-control" id="username"
+        placeholder="Enter username">
+      <button class="update-button" (click)="updateUsername()">Update</button>
+    </div>
+
+    <div class="form-group">
+      <label for="vat">Password</label>
+      <input [(ngModel)]="password" name="password" type="text" class="form-control" id="password"
+        placeholder="Enter password">
+      <button class="update-button" (click)="updatePassword()">Update</button>
+    </div>
+
+
+
+    <p *ngIf="message">{{message}}</p>
