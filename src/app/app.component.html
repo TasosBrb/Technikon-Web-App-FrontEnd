@@ -5,9 +5,9 @@
       <button mat-button routerLink="/home">Home</button>
     </li>
 
-    <button mat-button [matMenuTriggerFor]="searchMenu">Search (User, Property, Repair)</button>
+    <button mat-button [matMenuTriggerFor]="searchMenu">Search (Owner, Property, Repair)</button>
     <mat-menu #searchMenu="matMenu">
-      <button mat-menu-item routerLink="/UserSearch">User </button>
+      <button mat-menu-item routerLink="/UserSearch">Owner </button>
       <button mat-menu-item routerLink="/PropertySearch">Property </button>
       <button mat-menu-item routerLink="/RepairSearch">Repair </button>
     </mat-menu>
@@ -57,9 +57,3 @@
   <router-outlet></router-outlet>
 </div>
 
-<!-- Footer Content-->
-<!-- <div class="footer-container">
-  <footer>
-    <p>Copyright © 2023</p>
-  </footer>
-</div> -->
